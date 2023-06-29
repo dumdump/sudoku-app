@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#main-grid {
+    display: grid;
+    gap: 0px;
+    
+    align-self: center;
+    margin: 0 auto;
+    align-items:center;
+    justify-items: center;
+}
+
+.grid-cell {
+    display: flex;
+    flex-wrap: wrap;
+
+    font-family: monospace;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.cell-note-corners {
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+}
+
+.cell-note-corners-digit {
+    color: gray;
+    margin: 0 auto;
+    
+}
+
+.cell-note-center {
+    position: absolute;
+    font-size: 12px;
+    color: gray;
+}
+
+.given-digit {
+    background-color: rgb(232, 232, 232);
+}
+
+.selected-cell {
+    background-color: rgb(253, 239, 109);
+}
+
+.selected-cell.given-digit {
+    background-color: rgb(228, 215, 97);;
+}
